@@ -1,0 +1,24 @@
+
+{% block body %}
+<div class="ui grid">
+    <div class="row">
+        <div class="eleven wide column">
+            <div class="column">
+                <div class="ui raised segment">
+                    <p>Member Gacha</p>
+                    <div class="ui list">
+                    {% for character in characters %}
+                        <p>{{character.name}}</p>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
