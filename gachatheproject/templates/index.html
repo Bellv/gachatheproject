@@ -1,10 +1,79 @@
-{% extends 'base.html' %}
+{% extends 'hp-base.html' %}
 
 {% block headline %}
-<h1>~ Gacha Simulator ~</h1>
+<div style="height: 620px">
+
+</div>
 {% endblock %}
 
-{% block body %}
+{% block bodyone %}
+<div class="ui grid" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="one wide column"></div>
+    <div class="five wide column">
+            <div style="background-color: white;">
+                    <div class="ui card" style="background-color: #225479; height: 350px;">
+                        <h2 style="text-align: center; color: white; margin-top: 30px">Granblue Fantasy</h2>
+                        <p style="text-align: center; color: white; margin: 25px; font-size: 15px;">A role-playing video game developed by Cygames. The game also contains summons and a class system that alters the main character's move-set and growth.</p>
+                        <button class="ui button" style="width: 50%; margin: 0 auto; margin-top: 5%; background-color: #a2c4e5; color: black">Let's Roll</button>
+                    </div>
+            </div>
+    </div>
+    <div class="five wide column">
+            <div style="background-color: white;">
+                    <div class="ui card" style="background-color: #225479; height: 350px;">
+                        <h2 style="text-align: center; color: white; margin-top: 30px">Princess Connect</h2>
+                        <p style="text-align: center; color: white; margin: 25px; font-size: 15px">A Japanese mobile game by Cygames. Begin your adventure in the village of Lansol in the continent of Astrea! EVENT.</p>
+                        <button class="ui button" style="width: 50%; margin: 0 auto; margin-top: 12%; background-color: #a2c4e5; color: black">Let's Roll</button>
+                    </div>
+            </div>
+    </div>
+    <div class="five wide column">
+            <div style="background-color: white;">
+                    <div class="ui card" style="background-color: #225479; height: 350px;">
+                        <h2 style="text-align: center; color: white; margin-top: 30px">Fate Grand/Order</h2>
+                        <p style="text-align: center; color: white; margin: 25px; font-size: 15px">An online free-to-play role-playing game based on the Fate/stay night visual novel game and franchise by Type-Moon</p>
+                        <button class="ui button" style="width: 50%; margin: 0 auto; margin-top: 12%; background-color: #a2c4e5; color: black">Let's Roll</button>
+                    </div>
+            </div>
+    </div>
+</div>
 
+{% endblock %}
+
+{% block bodytwo %}
+
+<div class="ui grid" style="padding-top: 60px; padding-bottom: 60px">
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <h1 style="text-align: center">About Us</h1>
+        <p style="text-align: center; font-size: 20px; padding-top: 30px">We are GachaPon character game simulator web application statistic. We provide precise gachapon simulator draw rate with resonable algorithm. All of the rate, it's bse on their each official games. That's why you can feel more confident and look father more about statistic of the mobile game gachapon rate.</p>
+        <p style="text-align: right; font-size: 17px">Belly .-</p>
+        <div style="text-align: center; margin-top: 5%">
+            <button class="ui button" style="width: 25%; height: 45px; background-color: #1F547B; color: white;">Read More</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block bodythree %}
+
+<div class="ui grid" style="padding-top: 40px; height: 200px">
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <h1 style="text-align: center; color: white">Contact Us</h1>
+        <div style="text-align :center">
+            <button class="ui circular facebook icon button">
+                <i class="facebook icon"></i>
+            </button>
+            <button class="ui circular twitter icon button">
+                <i class="twitter icon"></i>
+            </button>
+            <button class="ui circular google plus icon button">
+                <i class="google plus icon"></i>
+            </button>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

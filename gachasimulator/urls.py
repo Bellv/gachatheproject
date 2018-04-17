@@ -1,11 +1,11 @@
 from django.conf.urls import url
 
 from . import views
-from .views.rnd_gacha import GenerateGachaView
+from .views.fatego import GenerateGachaFGOView
 
 urlpatterns = [
-    url(r'^$',
-        GenerateGachaView.as_view(),
-        name='generate_gacha'
+    url(r'^fatego$',
+        GenerateGachaFGOView.as_view(),
+        name='fgo_gacha'
     )
 ]

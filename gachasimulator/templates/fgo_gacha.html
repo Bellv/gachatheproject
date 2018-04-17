@@ -1,0 +1,30 @@
+
+{% block body %}
+<div class="ui grid">
+    <div class="row">
+        <div class="eleven wide column">
+            <div class="column">
+                <div class="ui raised segment">
+                    <p>Fate-Go Gacha</p>
+                    <div class="ui list">
+                    <form class="ui form" method="post" action="." enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <ul>
+                        {% for gacha_list in gacha_list %}
+                            <li>{{gacha_list}}</li>
+                        {% endfor %}
+                        </ul>
+                        <button type="" value="">Random</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Gacha The Project</title>
+        <!-- <link href="{% static 'scss/custom.css' %}" rel="stylesheet"> -->
+        <link href="{% static 'Semantic-UI-CSS-master/semantic.css' %}" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="{% static 'Semantic-UI-CSS-master/semantic.js' %}"></script>
+        <link href="{% static 'Semantic-UI-CSS-master/semantic.min.css' %}" rel="stylesheet">
+        <script src="{% static 'Semantic-UI-CSS-master/semantic.min.js' %}"></script>
+    </head>
+    <body>
+        <div style="height: 12%; background-color: #1F547B">
+            <div class="ui container" >
+                <h1 style="color: white; padding-top: 25px">GACHA THE PROJECT</h1>
+            </div>
+        </div>
+        <div style="background-image: url({% static '/images/gb-background.jpg' %}); background-repeat: no-repeat; background-size: cover;">
+            <div class="ui container">
+                {% block headline %} {% endblock %}
+            </div>
+        </div>
+        <div class="ui container">
+            {% block bodyone %} {% endblock %}
+        </div>
+        <div style="background-color: #a9c0d8">
+            <div class="ui container">
+                {% block bodytwo %} {% endblock %}
+            </div>
+        </div>
+        <div style="background-color: #1F547B">
+            <div class="ui container">
+                {% block bodythree %} {% endblock %}
+            </div>
+        </div>
+    </body>
+    {% block script %} {% endblock %}
+</html>
+
