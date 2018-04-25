@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'mont-light';
+    src: url('/static/fonts/Montserrat-Light.ttf')
+  }
+
+.font-mont {
+    font-family: mont-light
+}
